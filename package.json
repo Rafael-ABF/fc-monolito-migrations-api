@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run tsc -- --noEmit && jest",
     "tsc": "tsc",
-    "migrate": "node -r ts-node/register/transpile-only ./src/test-migrations/config-migrations/migrator-cli.ts"
+    "migrate": "node -r ts-node/register/transpile-only ./src/test-migrations/config-migrations/migrator-cli.ts",
+    "start": "ts-node src/api/server.ts"
   },
   "keywords": [
     "Migrations",
